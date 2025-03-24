@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlejandroDev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="section__header">
+        <header class="header">
+            <nav class="header__nav">
+                <div>
+                    <h2 class="logo">Alejandro<span>.dev</span></h2>
+                </div>
+                <div>
+                    <ul class="header__nav--list">
+                        <li><a class="header__nav__a" href="#inicio">Inicio</a></li>
+                        <li><a class="header__nav__a" href="#contact">Contacto</a></li>
+                        <li><a class="header__nav__a" href="#projects">Proyectos</a></li>
+                        <li><a class="header__nav__a" href="#skills">Habilidades</a></li>
+                    </ul>
+                </div>
+                <div class="downloadcv">
+                    <a href="assets/AlejandroVelasquez-CV-ESP-V4.pdf" download="CV-AlejandroVelasquez" class="downloadcv__button" id="downloadCvBtn">
+                        <img  src="assets/download-minimalistic-svgrepo-com.svg" alt="boton de descarga">Descargar CV
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section class="hero" id="inicio">
+            <div class="hero__aboutme">
+                <p class="tags">Bienvenido a mi portafolio</p>
+                <h1 class="hero__title">Hola,soy<br><span class="hero__title__span">Alejandro Velasquez</span></h1>
+                <h2 class="hero__subtitle">Desarrollador de software</h2>
+                <p class="hero__p"> Soy un persona con pasión por el aprendizaje constante. 
+                        Me considero curioso, analítico y competitivo, 
+                        siempre en busca de mejorar mis habilidades y enfrentar nuevos desafíos.
+                </p>
+                <div class="hero__buttons">
+                    <a class="downloadcv__button" id="downloadCvBtn" href="assets/AlejandroVelasquez-CV-ESP-V4.pdf" download="CV-AlejandroVelasquez">
+                        <img src="assets/descargar-cv.svg" alt="boton de descarga">Descargar CV
+                    </a>
+                    <a href="#projects" class="hero__buttons__project">Ver Proyectos</a>
+                </div>
+            </div>
+            <figure class="hero__photo hero__photo--bordered">
+                <img class="hero__photo__profile" src="assets/IMG_E1881.JPG" alt="foto de perfil">
+            </figure>
+        </section>
+        <section class="social" id="contact">
+            <div class="social__container">
+                <div class="subtitle">
+                    <h2 class="social__subtitle">Conectemos</h2>
+                </div>
+                <div class="social__buttons">
+                    <a href="https://github.com/alejandro-velasquez" target="_blank">
+                        <img src="assets/github.png" alt="github">Github
+                    </a>
+                    <a href="https://www.linkedin.com/in/alejandro-velasquez-alzate-b5a63b324/" target="_blank">
+                        <img src="assets/linkedin.png" alt="linkedin">Linkedin
+                    </a>
+                </div>
+                <div class="social__email">
+                    <input type="text" value="alejandroalzate.ava@gmail.com" id="emailInput" readonly>
+                    <button class="social__email__button" id="btncopy">
+                        <img src="assets/copy.svg" alt="copiar">
+                    </button>
+                </div>
+                <small class="social__email__message" id="copymessage">Haz clic para copiar mi direccion de correo electronico</small>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section class="projects" id="projects">
+            <div class="subtitle">                    
+                <h2>Proyectos</h2>
+                
+            </div>
+            <div class="card__container">
+                <article class="card">
+                    <header class="card__header">
+                        <img class="card__header__img" src="assets/urgencias-ya.PNG" alt="app urgencia ya">
+                    </header>    
+                    <div class="card__body">
+                        <span class="card__role">Scrum Master & Desarrollador Backend</span>
+                        <h3 class="card__title">Urgencias ya</h3>
+                        <p>Desarrollo y gestión de API para la administración eficiente de servicios de urgencias médicas.</p>
+                    </div>
+                    <div class="card__stack">
+                        <p>JAVA</p>
+                        <p>SPRING BOOT</p>
+                        <p>JWT</p>
+                        <p>JIRA</p>
+                    </div>
+                    <footer class="card__footer">
+                        <a href="https://urgenciasya-frontend-3.onrender.com/" target="_blank" class="card__button">
+                            <img src="assets/web-sitie.svg" alt="sitio web urgencias ya"> Sitio web
+                        </a>
+                        <a href="https://github.com/DiegoAndresRamirez/UrgenciasYa-Backend" target="_blank" class="card__button__github">
+                            <img src="assets/github.png" alt="repositorio-urgenciasya">Repositorio
+                        </a>
+                    </footer>
+                </article>
+                <article class="card">
+                    <header class="card__header">
+                        <img class="card__header__img" src="assets/logistica-api.PNG" alt="app-logistica">
+                    </header>    
+                        <div class="card__body">
+                            <span class="card__role">Desarrollador Backend</span>
+                            <h3 class="card__title">API Logistica</h3>
+                            <p>Desarrollo de una API REST con operaciones CRUD, utilizando SQL como base de datos</p>
+                        </div>
+                        <div class="card__stack">
+                            <p>JAVA</p>
+                            <p>SPRING BOOT</p>
+                            <p>SWAGGER</p>
+                        </div>
+                    <footer class="card__footer">
+                        <a href="https://app-logistic-warehouse.onrender.com/swagger-ui/index.html#/" target="_blank" class="card__button">
+                            <img src="assets/web-sitie.svg" alt="sitio web urgencias ya"> Sitio web
+                        </a>
+                        <a href="https://github.com/alejandro-velasquez/App-logistic-warehouse" target="_blank" class="card__button__github">
+                            <img src="assets/github.png" alt="repositorio">Repositorio
+                        </a>
+                    </footer>
+                </article>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="skills__title__container">
+                <h2 class="subtitle">Habilidades</h2>
+            </div>
+            <div class="card__skills__container">
+                <article class="card__skills">   
+                    <header class="card__header__skill">
+                        <h3>FRONTEND</h3>
+                    </header>    
+                        <div class="card__body__skills">
+                            <img src="assets/HTML5_logo.svg" alt="logo html">
+                            <img src="assets/CSS.3.svg" alt="logo css">
+                            <img src="assets/JavaScript-logo.png" alt="logo javascript">
+                        </div>
+                </article>
+                <article class="card__skills">   
+                    <header class="card__header__skill">
+                        <h3>BACKEND</h3>
+                    </header>    
+                        <div class="card__body__skills">
+                            <img src="assets/java-ar21.svg" alt="logo Java">
+                            <img src="assets/Python-logo-notext.svg" alt="logo Python">
+                            <img src="assets/new-php-logo.svg" alt="logo PHP">
+                        </div>
+                </article>
+                <article class="card__skills">   
+                    <header class="card__header__skill">
+                        <h3>FRAMEWORKS</h3>
+                    </header>    
+                        <div class="card__body__skills">
+                            <img src="assets/Laravel.svg" alt="logo Laravel">
+                            <img src="assets/spring-3.svg" alt="logo Spring boot">
+                        </div>
+                </article>
+                <article class="card__skills">   
+                    <header class="card__header__skill">
+                        <h3>HERRAMIENTAS</h3>
+                    </header>    
+                        <div class="card__body__skills">
+                            <img src="assets/Visual_Studio_Code_1.35_icon.svg" alt="logo VSC">
+                            <img src="assets/IntelliJ_IDEA_Icon.svg" alt="logo IDEA">
+                            <img src="assets/azure-devops-svgrepo-com.svg" alt="logo Azure">
+                            <img src="assets/jira-1.svg" alt="logo Jira">
+                        </div>
+                </article>
+                <article class="card__skills">   
+                    <header class="card__header__skill">
+                        <h3>APRENDIENDO</h3>
+                    </header>    
+                        <div class="card__body__skills">
+                            <img src="assets/React-icon.svg" alt="logo React">
+                        </div>
+                </article>                                
+            </div>
+        </section>
+    </main>
+   <footer class="footer">
+        <p>&copy; 2025 Alejandro Velásquez Alzate | Desarrollador de Software</p>
+        <div class="footer__links">
+            <a href="https://github.com/alejandro-velasquez" target="_blank">
+                <img src="assets/github-svgrepo-com.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/alejandro-velasquez-alzate-b5a63b324/" target="_blank">
+                <img src="assets/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="mailto:alejandroalzate.ava@gmail.com">
+                <img src="assets/gmail-svgrepo-com.svg" alt="Email">
+            </a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
