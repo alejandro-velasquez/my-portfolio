@@ -31,7 +31,7 @@ html {
 }
 
 h1{
-    font-size: 60px;
+    font-size: 110px;
     color: var(--text-color);
     font-family: 'jetBrains Mono', monospace;
     line-height: 1;
