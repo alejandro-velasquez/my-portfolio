@@ -184,14 +184,17 @@ body{
 }
 .header__nav {
     display: flex;
+    width: 100%;
     gap: 10%;
     justify-content: space-between;
     align-items: center;
+    max-width: 1400px;
 }
 
 .header__nav--list {
     display: flex;
     justify-content: center;
+    
     gap: 4px;
 }
 .header__nav--list li {
@@ -209,7 +212,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7px;
+    gap: 15px;
     padding: 10px;
     width: 170px;
     height: 45px;
